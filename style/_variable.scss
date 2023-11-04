@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
+
+$font : 'Libre Franklin', sans-serif;
+$Blue: hsl(223, 87%, 63%);
+$PaleBlue: hsl(223, 100%, 88%);
+$LightRed: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 59%);
+$VeryDarkBlue: hsl(209, 33%, 12%);
+$Fontsize_L: 1.25rem;
+
+// html Reset
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: $font;
+}

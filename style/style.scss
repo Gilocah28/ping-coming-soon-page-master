@@ -1,0 +1,173 @@
+@import 'variable';
+@import 'media';
+
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $VeryDarkBlue;
+
+    
+}
+.main___container {
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    margin: o auto;
+    width: 100%;
+
+    .main___form{
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 700px;
+
+        .main___title{
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            span{
+                color: $Blue;
+            }
+        }
+
+        .main___subTitle{
+            font-weight: 300;
+            color: $Gray;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            span{
+                color: $VeryDarkBlue;
+                font-weight: 700;
+            }
+        }
+        .main___subscribe{
+            font-size: 15px;
+            letter-spacing: 1.3px;
+            margin-bottom: 3rem;
+        }
+
+        .main___input{
+            width: 100%;
+            position: relative;
+            
+            #input{
+                width: 100%;
+                padding: 1rem 2rem;
+                border: 1.3px solid $PaleBlue;
+                outline: none;
+                border-radius: 25px;
+                font-size: .9rem;
+
+                &::placeholder{
+                    color: $PaleBlue;
+                    font-size: .9rem;
+                    letter-spacing: 2px;
+                }
+
+                @include laptop {
+                    width: 50%;
+                    display: inline;
+                    margin-right: 1rem;
+                }
+            }
+
+            .error{
+                color: $LightRed;
+                font-style: italic;
+            }
+            
+            .errorState{
+                margin-top: .5rem;
+                margin-bottom: 1rem;
+                font-style: italic;
+                font-size: .8rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: $LightRed;
+                display: none;
+                @include laptop {
+                    position: absolute;
+                    left: 4.5rem;
+                }
+            }
+
+            .submit{
+             width: 100%;
+             padding: 1rem 0;   
+             margin-top: 1rem;
+             border-radius: 25px;
+             outline: none;
+             border: none;
+             background-color: $Blue;
+             color: white;
+             font-weight: 700;
+             letter-spacing: 1px;
+
+             @include laptop {
+                width: 30%;
+            }
+
+             &:hover{
+                transition: all 200ms linear;
+                opacity: .8;
+                cursor: pointer;
+             }
+            }
+
+            .active{
+                display: block;
+            }
+        }
+
+    }
+    img{
+        width: 100%;
+        @include laptop {
+            margin-top: 1rem;
+        }
+    }
+
+    .footer___container{
+        width: 70%;
+        max-width: 300px;
+
+        .footer___icon{
+            margin: auto;
+            width: 180px;
+            display: flex;
+            justify-content: space-around;
+            color: $Blue;
+
+            .fa-brands{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border: 1px solid $PaleBlue;
+                border-radius: 50%;
+
+                &:hover{
+                    transition: all 200ms linear;
+                    background: $Blue;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footer___text{
+            color: $Gray;
+            font-size: .8rem;
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+    }
+}

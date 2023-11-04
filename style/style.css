@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: hsl(209, 33%, 12%);
+}
+
+.main___container {
+  width: 100%;
+  max-width: 900px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  margin: o auto;
+  width: 100%;
+}
+.main___container .main___form {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 700px;
+}
+.main___container .main___form .main___title {
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.main___container .main___form .main___title span {
+  color: hsl(223, 87%, 63%);
+}
+.main___container .main___form .main___subTitle {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.main___container .main___form .main___subTitle span {
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+.main___container .main___form .main___subscribe {
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  margin-bottom: 3rem;
+}
+.main___container .main___form .main___input {
+  width: 100%;
+  position: relative;
+}
+.main___container .main___form .main___input #input {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: 1.3px solid hsl(223, 100%, 88%);
+  outline: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+.main___container .main___form .main___input #input::-moz-placeholder {
+  color: hsl(223, 100%, 88%);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+.main___container .main___form .main___input #input::placeholder {
+  color: hsl(223, 100%, 88%);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 48rem) {
+  .main___container .main___form .main___input #input {
+    width: 50%;
+    display: inline;
+    margin-right: 1rem;
+  }
+}
+.main___container .main___form .main___input .error {
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+}
+.main___container .main___form .main___input .errorState {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: hsl(354, 100%, 66%);
+  display: none;
+}
+@media screen and (min-width: 48rem) {
+  .main___container .main___form .main___input .errorState {
+    position: absolute;
+    left: 4.5rem;
+  }
+}
+.main___container .main___form .main___input .submit {
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 48rem) {
+  .main___container .main___form .main___input .submit {
+    width: 30%;
+  }
+}
+.main___container .main___form .main___input .submit:hover {
+  transition: all 200ms linear;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.main___container .main___form .main___input .active {
+  display: block;
+}
+.main___container img {
+  width: 100%;
+}
+@media screen and (min-width: 48rem) {
+  .main___container img {
+    margin-top: 1rem;
+  }
+}
+.main___container .footer___container {
+  width: 70%;
+  max-width: 300px;
+}
+.main___container .footer___container .footer___icon {
+  margin: auto;
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  color: hsl(223, 87%, 63%);
+}
+.main___container .footer___container .footer___icon .fa-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+}
+.main___container .footer___container .footer___icon .fa-brands:hover {
+  transition: all 200ms linear;
+  background: hsl(223, 87%, 63%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.main___container .footer___container .footer___text {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}/*# sourceMappingURL=style.css.map */
