@@ -32,6 +32,7 @@ body {
   .main___container {
     margin: 2rem 1rem;
     height: 90vh;
+    gap: 2rem;
   }
 }
 .main___container .main___form {
